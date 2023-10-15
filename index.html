@@ -11,8 +11,6 @@
   <!-- BootStrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-
-
   <!-- Link External CSS From Assets Folder -->
   <link rel="stylesheet" href="Assets/css/style.css" />
 </head>
@@ -24,16 +22,18 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
           <h1 class="navbar_h1">Portfolio</h1>
+          <!-- Navbar Responsive Button -->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Navbar collapse list -->
           <div class="collapse navbar-collapse col-9" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
               <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
-              <li class="nav-item"><a class="nav-link" href="#work">Experience</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact_me">Contact Me</a></li>
-              <li class="nav-item"><a class="nav-link" href="Assets/images/Suhaim Khalid Resume.pdf">Resume</a></li>
+             
           </ul>
           </div>
         </div>
@@ -42,14 +42,63 @@
 
 
   <!-- Hero banner Section -->
-  <section class="hero-banner">
+  <section class="jumbotron hero-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 hero_image">
+            <img src="Assets/images/SK_2.png" alt="Suhaim Khalid Standing Image ">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 hero_description">
+            <h2> I'm <span>Suhaim Khalid</span></h2>
+            <h3>Front End Developer</h3>
+            <p><a class="resume-btn" href="Assets/images/Suhaim Khalid Resume.pdf">Resume</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hero Bar -->
+    <section class="hero_bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+            <article class="text_area">
+              <div class="inner_area">
+                <h3>2</h3>
+                <p>YEARS OF EXPERIENCE</p>
+              </div>
+              <div class="inner_area">
+                <h3>100<sup>+</sup></h3>
+                <p>Static Websites Created</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-8">
+            <article class="images_area">
+              <img src="Assets/images/Icons/Html.png" alt="Html Logo">
+              <img src="Assets/images/Icons/Css.png" alt="CSS Logo">
+              <img src="Assets/images/Icons/Bootstrap.png" alt="BootStrap Logo">
+              <img src="Assets/images/Icons/JS4.png" alt="JavaScript Logo">
+              <img src="Assets/images/Icons/Jquery.png" alt="J-Query Logo">
+              <img src="Assets/images/Icons/React.png" alt="React Logo">
+              <img src="Assets/images/Icons/Github.png" alt="GitHub Logo">
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+
+  <!-- <section class="hero-banner">
    <div class="container"> 
     <article class="hero_article">
-    <img src="Assets/images/SK_2.png" alt="Suhaim Khalid Image">
+    
     <h2><span>Front End Developer</span></h2>
     </article>
   </div>
-  </section>
+  </section> -->
 
    <!-- Main Section -->
    <main>
