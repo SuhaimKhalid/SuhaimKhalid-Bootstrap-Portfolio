@@ -31,6 +31,7 @@ p {
   margin: 0px;
 }
 
+/* Header Section Start */
 header nav {
   background-color: var(--dark-color);
   padding: 10px 0px;
@@ -77,7 +78,10 @@ nav ul li .nav-link {
   width: 100%;
   transition: width 0.3s ease 0s;
 }
+/* Header section End */
+/* ================================== */
 
+/* Hero Section Start */
 .hero-section {
   background-color: var(--dark-color);
   margin-top: 65px;
@@ -143,7 +147,11 @@ nav ul li .nav-link {
   color: var(--dark-color);
   transition: all 0.3s ease-in-out 0s;
 }
+/* Hero Section End */
 
+/* ============================= */
+
+/* Hero Bar Section Start */
 .hero_bar {
   background-color: var(--Primary-color);
   padding: 10px 0px;
@@ -180,10 +188,14 @@ nav ul li .nav-link {
 .hero_bar .images_area img {
   width: 82px;
 }
+/* Hero Bar Section End */
 
+/* ============================== */
+
+/* About Section Start */
 .about_section {
   color: white;
-  padding: 70px 0px;
+  padding: 70px 10px;
 }
 
 .about_section h3 {
@@ -208,15 +220,22 @@ nav ul li .nav-link {
 
 .about_section p span {
   color: var(--Primary-color);
+  text-transform: uppercase;
 }
+/* About Section End */
+
+/* ================================= */
+
+/* Experience Section Start */
 
 .experience_section {
   background-color: var(--light-dark-color);
   color: white;
+  padding-bottom: 20px;
 }
 
 .experience_section .row {
-  transition:0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0s;
   padding: 50px 10px;
   border-bottom: 2px solid rgb(93, 93, 93);
   margin: 20px 0px;
@@ -242,6 +261,7 @@ nav ul li .nav-link {
 
 .experience_section .exp_years h3 {
   font-size: 30px;
+  color: var(--Primary-color);
 }
 
 .experience_section .exp_years p {
@@ -256,18 +276,18 @@ nav ul li .nav-link {
   position: relative;
   top: -29px;
   left: -31px;
-  transition:0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .experience_section .row:hover {
   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
-  transition:0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .experience_section .row:hover .exp_circle {
   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
   background-color: var(--Primary-color);
-  transition:0.3s ease-in-out;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .experience_section .exp_description {
@@ -283,93 +303,106 @@ nav ul li .nav-link {
   font-size: 18px;
   line-height: 2;
 }
+/* Experience Section End */
+/* ================================ */
 
-main {
-  background: rgb(228, 242, 254);
+/* Work Section Start */
+.work_section{
+    padding: 70px 10px;
+}
+.work_section h3{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 73px;
+}
+.work_section h3::after {
+  content: "";
+  width: 10%;
+  background-color: var(--Primary-color);
+  height: 2px;
+  display: block;
+  margin:auto;
 }
 
-section .flex_container {
-  display: flex;
-  padding: 72px;
+.work_section .line_grid{grid-area: line_grid;background: var(--Primary-color);width: 4px;margin-left: auto;margin-right: auto;z-index: 100;}
+.work_section .description_grid{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 38%;
 }
-
-section .flex_container .flex_left {
-  text-align: right;
-  width: 15%;
+.work_section .description_grid h4{
+    font-size: 30px;
+    color: var(--Primary-color);
 }
-
-section .flex_container .flex_left h2 {
-  font-size: 34px;
-  color: var(--Primary-color);
+.work_section .description_grid p{
+    font-size: 18px;
+    padding-top: 10px;
 }
-
-section .flex_container .flex_right {
-  padding-left: 58px;
-  border-left: 4px solid var(--Primary-color);
-  margin-left: 37px;
-  width: 85%;
-}
-
-#about .flex_container .flex_right > p {
-  padding: 10px 0px;
-  font-size: 16px;
-}
-
-.work_grid {
-  display: grid;
-  grid-template: "grid_1 grid_1" 1fr "grid_2 grid_3" 1fr "grid_4 grid_5" 1fr / 1fr 1fr;
-  gap: 10px;
-}
-
-.work_grid .grid_1 {
-  grid-area: grid_1 / grid_1 / grid_1 / grid_1;
-}
-
-.work_grid .grid_2 {
-  grid-area: grid_2 / grid_2 / grid_2 / grid_2;
-}
-
-.work_grid .grid_3 {
-  grid-area: grid_3 / grid_3 / grid_3 / grid_3;
-}
-
-.work_grid .grid_4 {
-  grid-area: grid_4 / grid_4 / grid_4 / grid_4;
-}
-
-.work_grid .grid_5 {
-  grid-area: grid_5 / grid_5 / grid_5 / grid_5;
-}
-
-.work_grid .grid_column .grid_Card {
+.work_section .grid_card{
   width: 100%;
   height: 300px;
-  border: 5px solid var(--work_area_color);
+  border: 5px solid var(--Primary-color);
   overflow: hidden;
   position: relative;
+  transition: 0.3s ease-in-out;
+  }
+
+  .work_section .card-body{background-color: var(--light-dark-color);
+  color: white;}
+  .work_section .card-body h5{
+    font-size: 25px;
+    color: var(--Primary-color);
+}
+  .work_section .card-body p{
+    line-height: 2;
+}
+.work_section .card:hover{
+   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
+}
+.work_section .grid_card img{
+    width: 100%;
+}
+.work_section .triangle {
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-top: 0;
+  border-bottom: 30px solid var(--Primary-color);
+  position: relative;
+  top: -29px;
+  left: -12.4px;
 }
 
-.work_grid .grid_column .grid_Card img {
-  width: 100%;
+.work_section .grid_container{
+  display: grid;
+  grid-template-columns: 2fr 0.3fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+      "horiseon_des line_grid horiseon_card"
+      "ameren_card line_grid ameren_des"
+      "elab_des line_grid elab_card"
+      "dental_card line_grid dental_des"
+      "socreLoad_des line_grid socreLoad_card";
 }
 
-.work_grid .grid_column .grid_bio {
-  position: absolute;
-  color: black;
-  background-color: var(--work_area_color);
-  top: 65%;
-  padding: 10px 25px 10px 30px;
-  border-top-right-radius: 25px;
-}
+/* Grid text area */
+.horiseon_grid_des{grid-area: horiseon_des;}
+.ameren_grid_des{grid-area: ameren_des;}
+.elab_grid_des{grid-area: elab_des;}
+.dental_grid_des{grid-area: dental_des;}
+.socreLoad_grid_des{grid-area: socreLoad_des;}
 
-.work_grid .grid_column .grid_bio h4 {
-  font-size: 18px;
-}
+/* Grid Image Area */
+.horiseon_card{grid-area: horiseon_card;}
+.ameren_card{grid-area: ameren_card;}
+.elab_card{grid-area: elab_card;}
+.dental_card{grid-area: dental_card;}
+.socreLoad_card{grid-area: socreLoad_card;}
 
-.work_grid .grid_column .grid_bio p {
-  font-size: 14px;
-  padding: 0px;
-}
+/* Work Section End */
+
 
 #contact_me .flex_right ul {
   display: flex;
@@ -397,46 +430,24 @@ section .flex_container .flex_right {
 }
 
 @media screen and (max-width: 1200px) {
-  section .flex_container {
-      flex-wrap: wrap;
-      padding: 20px 50px;
-  }
-
-  section .flex_container .flex_left {
-      text-align: left;
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .flex_left h2 > br {
-      display: none;
-  }
-
-  section .flex_container .flex_right {
-      padding-left: 0px;
-      border-top: 4px solid var(--Primary-color);
-      border-left: none;
-      margin-left: 0px;
-      width: 100%;
-      padding-top: 10px;
-  }
-
+  /* Hero Bar Sectio Start */
   .hero_bar .images_area img {
       width: 82px;
   }
-
   .hero_bar .text_area .inner_area h3 {
       font-size: 65px;
   }
 }
 
 @media screen and (max-width: 992px) {
+
+  /* Header */
   header nav .navbar_h1 {
       display: inline-block;
       width: 70%;
       text-align: left;
   }
-
+/* Navbar Start 992px  */
   nav .container {
       padding: 5px 10px;
   }
@@ -484,6 +495,33 @@ section .flex_container .flex_right {
       height: 2px;
       background-color: var(--Primary-color);
   }
+/* Navbar section 992px End */
+/* ======================= */
+
+
+  /* Work Section 992px start */
+  .work_section .grid_container{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr ;
+    grid-template-areas:
+    "line_grid horiseon_des"
+    "line_grid horiseon_card"
+    "line_grid ameren_des"
+    "line_grid ameren_card"
+    "line_grid elab_des"
+    "line_grid elab_card"
+    "line_grid dental_des"
+    "line_grid dental_card"
+    "line_grid socreLoad_des"
+    "line_grid socreLoad_card"
+       ;
+  }
+  .work_section .description_grid{
+    top: 0;
+    padding: 36px 0px;
+}
+  /* Work Section 992px End */
 
   .hero-section .hero_image img {
       width: 250px;
@@ -513,7 +551,7 @@ section .flex_container .flex_right {
   }
 
   .experience_section .row {
-      padding: 20px;
+      padding: 20px 10px;
   }
 
   .text_area {
