@@ -454,10 +454,122 @@ nav ul li .nav-link {
     padding-top: 20px;
 }
 
-
-
-
 /* Skill section End */
+
+/* ======================= */
+
+/* Footer Section Start */
+footer {
+  background-color: var(--bs-dark);
+  padding: 20px 0px;
+}
+
+footer .upper_Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ft_container {
+  padding: 64px 0px;
+}
+
+.ft_row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer_col {
+  background-color: var(--light-dark-color);
+  color: white;
+  display: flex;
+  width: 295px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.footer_col:hover .footer_col i {
+  color: var(--Primary-color);
+}
+
+.footer_col:hover {
+  box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.footer_col i {
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.footer_col p {
+}
+
+.social_links {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social_links li {
+  display: inline-block;
+}
+
+.social_links li i {
+  color: white;
+  font-size: 28px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.social_links li i:hover {
+  color: var(--Primary-color);
+  transition: all 0.3s ease-in 0s;
+}
+
+.upper_Footer .line {
+  width: 60%;
+  height: 2px;
+  background-color: var(--Primary-color);
+}
+
+.lower_footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.lower_footer .line {
+  width: 60%;
+  height: 2px;
+  background-color: var(--Primary-color);
+}
+
+.upper_Footer .left {
+  margin-right: 10px;
+}
+
+.upper_Footer .right {
+  margin-left: 10px;
+}
+
+.text {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  width: 25%;
+}
+
+.social_link_center {
+  width: 25%;
+}
+
+/* Footer Section End */
 
 
 
@@ -703,11 +815,5 @@ nav ul li .nav-link {
       font-size: 14px;
   }
 
-  section .flex_container .flex_left h2 {
-      font-size: 30px;
-  }
 
-  #contact_me .flex_right ul li a {
-      font-size: 18px;
-  }
 }
