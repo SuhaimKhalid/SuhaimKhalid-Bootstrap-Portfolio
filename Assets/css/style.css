@@ -358,8 +358,11 @@ nav ul li .nav-link {
   .work_section .card-body p{
     line-height: 2;
 }
+.work_section .card{
+   transition: 0.3s ease-in-out;
+}
 .work_section .card:hover{
-   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;
+   box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;transition: 0.3s ease-in-out;
 }
 .work_section .grid_card img{
     width: 100%;
@@ -403,31 +406,61 @@ nav ul li .nav-link {
 
 /* Work Section End */
 
-
-#contact_me .flex_right ul {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  flex-wrap: wrap;
+/* Skill section start */
+.skill_section{
+    background-color: var(--light-dark-color);
+    padding: 46px 0px;
 }
-
-#contact_me .flex_right ul li {
-  margin: 10px;
+.skill_section h3{
+    text-align: center;
+    color: white;
+    font-size: 40px;
 }
-
-#contact_me .flex_right ul li a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-#contact_me .flex_right ul li a::after {
+.skill_section h3::after {
   content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
+ top:10px;
+  width: 15%;
   background-color: var(--Primary-color);
+  height: 2px;
+  display: block;
+  margin:auto;
 }
+
+.skill_show {
+  display: flex;
+  flex-wrap: wrap;
+   /* Adjust as needed */
+   /* Adjust as needed */
+   /* Adjust the gap between items as needed */
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.skill_grid_card {
+  width: 259px; 
+  background: var(--dark-color);
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 0.2s ease-in-out;
+}
+.skill_grid_card:hover{background-color:var(--Primary-color);box-shadow: rgba(255, 200, 107, 0.3) 0px 5px 21px 7px;transition: 0.2s ease-in-out;}
+.skill_grid_card img{
+    width: 116px;
+}
+.skill_grid_card h4{
+    color: white;
+    padding-top: 20px;
+}
+
+
+
+
+/* Skill section End */
+
+
+
 
 @media screen and (max-width: 1200px) {
   /* Hero Bar Sectio Start */
@@ -522,7 +555,9 @@ nav ul li .nav-link {
     padding: 36px 0px;
 }
   /* Work Section 992px End */
+/* ====================== */
 
+/* Hero Section 992 start */
   .hero-section .hero_image img {
       width: 250px;
       height: 250px;
@@ -544,6 +579,21 @@ nav ul li .nav-link {
   .hero-section .hero_description p {
       margin: 20px 0px 0px;
   }
+  /* Hero section 992px End */
+
+  /* ======================= */
+
+/* Hero Bar Section 992px Start */
+.text_area {
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--dark-color);
+  margin-bottom: 10px;
+}
+/* Hero Bar Section 992px Start */
+
+/* ============================= */
+
+  /* Experience section 992px Start */
 
   .experience_section .exp_years {
       margin-bottom: 57px;
@@ -553,33 +603,12 @@ nav ul li .nav-link {
   .experience_section .row {
       padding: 20px 10px;
   }
-
-  .text_area {
-      padding-bottom: 1px;
-      border-bottom: 2px solid var(--dark-color);
-      margin-bottom: 10px;
-  }
-
-  section .flex_container {
-      padding: 15px;
-  }
-
-  section .hero_article h2 {
-      text-align: center;
-      display: block;
-  }
-
-  section .hero_article img {
-      width: 300px;
-      height: 300px;
-      border-radius: 50%;
-      position: relative;
-      display: block;
-      margin: 0px auto 20px;
-  }
+/* Experience section 992px End */
+  
 }
 
 @media screen and (max-width: 768px) {
+  /* Hero Section Start 768px */
   .hero-section {
       margin-top: 65px;
       padding-top: 20px;
@@ -618,8 +647,12 @@ nav ul li .nav-link {
   .hero-section .hero_description a {
       font-size: 18px;
   }
+ /* Hero Section End 768px */
 
-  .hero_bar .images_area {
+ /* ========================= */
+
+/* Hero Bar Section Start 768px */
+ .hero_bar .images_area {
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
@@ -630,49 +663,14 @@ nav ul li .nav-link {
       width: 53px;
   }
 
-  .work_grid {
-      grid-template: "grid_1" 1fr "grid_2" 1fr "grid_3" 1fr "grid_4" 1fr "grid_5" 1fr / 1fr;
-      gap: 20px;
-  }
-
-  #contact_me .flex_right ul {
-      display: inline-block;
-      margin: 0px;
-      padding: 0px;
-  }
-
-  #contact_me .flex_right ul li {
-      margin: 20px 0px;
-  }
-
-  #contact_me .flex_right ul li a {
-      text-decoration: none;
-      color: black;
-      font-size: 20px;
-  }
-
-  #contact_me .flex_right ul li a::after {
-      content: "";
-      display: block;
-      width: 25%;
-      height: 3px;
-      background-color: black;
-      transition: width 0.3s ease 0s;
-  }
-
-  #contact_me .flex_right ul li a:hover {
-      color: var(--Primary-color);
-      transition: all 0.4s ease-in-out 0s;
-  }
-
-  #contact_me .flex_right ul li a:hover::after {
-      content: "";
-      display: block;
-      width: 100%;
-      height: 3px;
-      background-color: var(--Primary-color);
-      transition: width 0.3s ease 0s;
-  }
+ /* Hero Bar Section Start 768px */
+/*=====================  */
+  /* Skil Section start 768 */
+  
+.skill_grid_card {
+  width: 100%; 
+}
+/* Skil Section End 768 */
 }
 
 @media screen and (max-width: 567px) {
