@@ -2,7 +2,7 @@
 
 ## Description
 
-Portfolio website built in HTML , CSS and Bootstrap show the work experience, skill and experience of developer.
+Portfolio website built in HTML , CSS and Bootstrap show the work experience, skills and experience of developer.
 
 ## Motive
 
