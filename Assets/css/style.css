@@ -504,9 +504,7 @@ footer .upper_Footer {
   font-size: 20px;
   padding-right: 20px;
 }
-
-.footer_col p {
-}
+.footer_col p a{color: white;text-decoration: none;}
 
 .social_links {
   list-style: none;
@@ -531,7 +529,7 @@ footer .upper_Footer {
   transition: all 0.3s ease-in 0s;
 }
 
-.upper_Footer .line {
+.upper_Footer .line, .lower_footer .line{
   width: 60%;
   height: 2px;
   background-color: var(--Primary-color);
@@ -544,11 +542,7 @@ footer .upper_Footer {
   padding-bottom: 40px;
 }
 
-.lower_footer .line {
-  width: 60%;
-  height: 2px;
-  background-color: var(--Primary-color);
-}
+
 
 .upper_Footer .left {
   margin-right: 10px;
@@ -581,6 +575,13 @@ footer .upper_Footer {
   }
   .hero_bar .text_area .inner_area h3 {
       font-size: 65px;
+  }
+  /* ====================== */
+
+  /* Footer Section 1200px  Start*/
+  .text {
+    font-size: 35px;
+    width: 25%;
   }
 }
 
@@ -717,6 +718,14 @@ footer .upper_Footer {
   }
 /* Experience section 992px End */
   
+/* ======================= */
+ /* Footer Section 992px  Start*/
+ .text {
+  font-size: 33px;
+  width: 35%;
+}
+.social_link_center{width: 35%;}
+/* Footer Section 992px  End*/
 }
 
 @media screen and (max-width: 768px) {
@@ -772,7 +781,7 @@ footer .upper_Footer {
 
   .hero_bar .images_area img {
       margin: 10px;
-      width: 53px;
+      width: 42px;
   }
 
  /* Hero Bar Section Start 768px */
@@ -783,13 +792,32 @@ footer .upper_Footer {
   width: 100%; 
 }
 /* Skil Section End 768 */
+/* ======================= */
+
+ /* Footer Section 768  Start*/
+ .text {
+  font-size: 33px;
+  width: 40%;
+}
+.lower_footer .line,
+.upper_Footer .line {
+  width: 31%;
+}
+.social_link_center{width: 40%;}
+/* Footer Section 768  End*/
 }
 
+
+
+
 @media screen and (max-width: 567px) {
+  /* Header Section Start 567px */
   header h1 {
       font-size: 30px;
   }
+   /* ======================= */
 
+/* Navbar section start 567px */
   nav ul li {
       margin: 0px;
   }
@@ -797,7 +825,9 @@ footer .upper_Footer {
   nav ul li .nav_item {
       font-size: 18px;
   }
+   /* ======================= */
 
+/* Hero section 567px */
   section .hero_article img {
       width: 200px;
       height: 200px;
@@ -806,7 +836,9 @@ footer .upper_Footer {
   section .hero_article h2 {
       font-size: 20px;
   }
+   /* ======================= */
 
+/* Hero bar section 567px */
   .hero_bar .text_area .inner_area h3 {
       font-size: 54px;
   }
@@ -815,5 +847,18 @@ footer .upper_Footer {
       font-size: 14px;
   }
 
+  /* ======================= */
+
+ /* Footer Section 992px  Start*/
+ .text {
+  font-size: 33px;
+  width: 60%;
+}
+.lower_footer .line,
+.upper_Footer .line {
+  width: 31%;
+}
+.social_link_center{width: 60%;}
+/* Footer Section 992px  End*/
 
 }
